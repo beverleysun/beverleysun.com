@@ -1,1 +1,1 @@
-[beverleysun.com](beverleysun.com)
+[beverleysun.com](http://beverleysun.com)
