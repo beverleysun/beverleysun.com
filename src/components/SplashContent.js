@@ -1,7 +1,7 @@
 import React from "react";
 import { Spring } from "react-spring/renderprops";
 
-export default function SplashContent({ title }) {
+export default function SplashContent({ title = "Title", className }) {
   return (
     <Spring
       from={{ opacity: 0 }}
@@ -10,7 +10,10 @@ export default function SplashContent({ title }) {
     >
       {(props) => (
         <div style={props}>
-          <h1 style={style}>{title}</h1>
+          <div className={className}>
+            <h1 style={{ fontSize: 84, ...style }}>{title}</h1>
+            <h2 style={style}>Coming Soon</h2>
+          </div>
         </div>
       )}
     </Spring>
@@ -18,8 +21,5 @@ export default function SplashContent({ title }) {
 }
 
 const style = {
-  color: "#f3f3f3",
-  fontFamily: "Poppins",
-  fontSize: 84,
-  margin: "5vw",
+  color: "#fff",
 };
