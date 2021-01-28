@@ -1,8 +1,7 @@
 import React from "react";
 import { config, Trail } from "react-spring/renderprops";
-import { IoIosArrowDown } from "react-icons/io";
-import { Link } from "react-scroll";
-import { white } from "../util/colors.js";
+import AnimatedDownArrow from "./AnimatedDownArrow.js";
+import { colors } from "../util/colors.js";
 
 export default function SplashContent({
   title = "Title",
@@ -25,14 +24,13 @@ export default function SplashContent({
     <h2 style={{ color: `${textColor}` }} key="4">
       Loves dogs
     </h2>,
-    <Link to={arrowLinkTo} smooth={true}>
-      <IoIosArrowDown
-        color={white}
-        size="40px"
-        style={{ cursor: "pointer", marginTop: "2.5rem" }}
-        key="5"
-      ></IoIosArrowDown>
-    </Link>
+    <div style={{ marginTop: "2.5rem" }}>
+      <AnimatedDownArrow
+        to={arrowLinkTo}
+        color={colors.white}
+        toolTip="about-me"
+      ></AnimatedDownArrow>
+    </div>
   );
 
   return (
