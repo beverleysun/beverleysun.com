@@ -1,3 +1,5 @@
-export const white = "#fff";
-export const blue = "#99ced3";
-export const orange = "#DB925A";
+export const colors = {
+  white: "#fff",
+  blue: "#99ced3",
+  orange: "#DB925A",
+};

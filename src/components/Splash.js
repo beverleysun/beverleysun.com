@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { config, Trail } from "react-spring/renderprops";
 import SplashStripe from "./SplashStripe.js";
 import SplashContent from "./SplashContent.js";
-import { blue } from "../util/colors.js";
+import { colors } from "../util/colors.js";
 
 export default function Splash({ arrowLinkTo = "", title = "Title" }) {
   const [bgCompleted, setBgCompleted] = useState(false);
-  const bgColor = blue;
+  const bgColor = colors.blue;
 
   const stripes = [];
   for (let i = 0; i < 5; i++) {
