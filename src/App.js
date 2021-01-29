@@ -20,6 +20,13 @@ export default function App() {
         downArrowToolTip="technologies"
         id="about"
       ></AboutMe>
+      <Technologies
+        upArrowTo="about"
+        downArrowTo=""
+        upArrowToolTip="about"
+        downArrowToolTip="somewhere"
+        id="technologies"
+      ></Technologies>
     </>
   );
 }
