@@ -3,14 +3,20 @@ import { colors } from "../util/colors.js";
 import AnimatedDownArrow from "./AnimatedDownArrow.js";
 import AnimatedUpArrow from "./AnimatedUpArrow.js";
 
-export default function AboutMe({ upArrowTo = "", downArrowTo = "" }) {
+export default function AboutMe({
+  upArrowTo = "",
+  downArrowTo = "",
+  upArrowToolTip = "",
+  downArrowToolTip = "",
+  id = "",
+}) {
   return (
-    <div style={{ height: "100vh", backgroundColor: "#fff" }} id="about">
+    <div style={{ height: "100vh", backgroundColor: "#fff" }} id={id}>
       <div style={{ margin: "25vh 0 0 15vw", position: "absolute" }}>
         <AnimatedUpArrow
           to={upArrowTo}
           color={colors.orange}
-          toolTip="to-home"
+          toolTip={upArrowToolTip}
         ></AnimatedUpArrow>
         <h1
           style={{
@@ -32,7 +38,7 @@ export default function AboutMe({ upArrowTo = "", downArrowTo = "" }) {
         <AnimatedDownArrow
           to={downArrowTo}
           color={colors.orange}
-          toolTip="somewhere"
+          toolTip={downArrowToolTip}
         ></AnimatedDownArrow>
       </div>
     </div>

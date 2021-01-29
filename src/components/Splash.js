@@ -4,7 +4,12 @@ import SplashStripe from "./SplashStripe.js";
 import SplashContent from "./SplashContent.js";
 import { colors } from "../util/colors.js";
 
-export default function Splash({ arrowLinkTo = "", title = "Title" }) {
+export default function Splash({
+  downArrowTo = "",
+  title = "Title",
+  downArrowToolTip = "",
+  id = "",
+}) {
   const [bgCompleted, setBgCompleted] = useState(false);
   const bgColor = colors.blue;
 
@@ -16,7 +21,7 @@ export default function Splash({ arrowLinkTo = "", title = "Title" }) {
   }
 
   return (
-    <div style={{ width: "100vw", height: "100vh" }} id="splash">
+    <div style={{ width: "100vw", height: "100vh" }} id={id}>
       <SplashContent
         title={title}
         style={{
@@ -24,7 +29,8 @@ export default function Splash({ arrowLinkTo = "", title = "Title" }) {
           position: "absolute",
           overflowY: "hidden",
         }}
-        arrowLinkTo={arrowLinkTo}
+        downArrowTo={downArrowTo}
+        downArrowToolTip={downArrowToolTip}
       ></SplashContent>
       {bgCompleted ? (
         <div

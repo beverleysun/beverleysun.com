@@ -7,7 +7,8 @@ export default function SplashContent({
   title = "Title",
   style = {},
   textColor = "white",
-  arrowLinkTo = "",
+  downArrowTo = "",
+  downArrowToolTip = "",
 }) {
   const content = [];
 
@@ -26,9 +27,9 @@ export default function SplashContent({
     </h2>,
     <div style={{ marginTop: "2.5rem" }}>
       <AnimatedDownArrow
-        to={arrowLinkTo}
+        to={downArrowTo}
         color={colors.white}
-        toolTip="about-me"
+        toolTip={downArrowToolTip}
       ></AnimatedDownArrow>
     </div>
   );
