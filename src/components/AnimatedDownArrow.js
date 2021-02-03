@@ -16,8 +16,8 @@ export default function AnimatedDownArrow({
     <Spring
       to={{
         size: hover ? "60px" : "40px",
-        marginTop: hover ? "10px" : "0",
         marginLeft: hover ? "-10px" : "0",
+        marginBottom: hover ? "-20px" : "0",
         opacity: hover ? 1 : 0,
       }}
     >
@@ -36,6 +36,7 @@ export default function AnimatedDownArrow({
             onMouseEnter={toggleHover}
             onMouseLeave={toggleHover}
             duration="500"
+            style={{ overflow: "hidden" }}
           >
             <IoIosArrowDown
               color={color}
@@ -43,7 +44,7 @@ export default function AnimatedDownArrow({
               style={{
                 cursor: "pointer",
                 marginLeft: `${props.marginLeft}`,
-                marginTop: `${props.marginTop}`,
+                marginBottom: `${props.marginBottom}`,
                 display: "inline",
               }}
             ></IoIosArrowDown>

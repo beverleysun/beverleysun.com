@@ -17,7 +17,7 @@ export default function AnimatedDownArrow({
       to={{
         size: hover ? "60px" : "40px",
         marginLeft: hover ? "-10px" : "0",
-        marginBottom: hover ? "10px" : "0",
+        marginTop: hover ? "-20px" : "0",
         opacity: hover ? "1" : "0",
       }}
     >
@@ -43,7 +43,7 @@ export default function AnimatedDownArrow({
               style={{
                 cursor: "pointer",
                 marginLeft: `${props.marginLeft}`,
-                marginBottom: `${props.marginBottom}`,
+                marginTop: `${props.marginTop}`,
               }}
             ></IoIosArrowUp>
           </Link>

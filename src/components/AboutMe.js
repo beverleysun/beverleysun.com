@@ -11,8 +11,14 @@ export default function AboutMe({
   id = "",
 }) {
   return (
-    <div style={{ height: "100vh", backgroundColor: "#fff" }} id={id}>
-      <div style={{ margin: "25vh 0 0 15vw", position: "absolute" }}>
+    <div
+      className="section"
+      style={{
+        backgroundColor: `${colors.white}`,
+      }}
+      id={id}
+    >
+      <div style={{ margin: "0 0 0 15vw", position: "absolute" }}>
         <AnimatedUpArrow
           to={upArrowTo}
           color={colors.orange}
@@ -26,7 +32,7 @@ export default function AboutMe({
         >
           About Me
         </h1>
-        <div style={{ width: "40vw", marginBottom: "2.5rem" }}>
+        <div style={{ width: "50vw", marginBottom: "2.5rem" }}>
           <h2 style={{ color: `${colors.orange}`, marginBottom: "1rem" }}>
             Hey there! I'm a Penultimate Year Software Engineering Student at
             the University of Auckland. I'm passionate about what I do with a

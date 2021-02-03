@@ -12,14 +12,13 @@ export default function Technologies({
 }) {
   return (
     <div
+      className="section"
       id={id}
       style={{
-        height: "100vh",
-        width: "100vw",
         backgroundColor: `${colors.orange}`,
       }}
     >
-      <div style={{ margin: "25vh 0 0 15vw", position: "absolute" }}>
+      <div style={{ marginLeft: "15vw", position: "absolute" }}>
         <AnimatedUpArrow
           to={upArrowTo}
           color={colors.white}

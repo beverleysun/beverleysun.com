@@ -21,37 +21,41 @@ export default function Splash({
   }
 
   return (
-    <div style={{ width: "100vw", height: "100vh" }} id={id}>
-      <SplashContent
-        title={title}
-        style={{
-          margin: "25vh 0 0 15vw",
-          position: "absolute",
-          overflowY: "hidden",
-        }}
-        downArrowTo={downArrowTo}
-        downArrowToolTip={downArrowToolTip}
-      ></SplashContent>
-      {bgCompleted ? (
-        <div
+    <div>
+      <div className="section" style={{ position: "absolute" }}>
+        <SplashContent
+          title={title}
           style={{
-            height: "100vh",
-            width: "100vw",
-            backgroundColor: `${bgColor}`,
+            marginLeft: "15vw",
+            position: "absolute",
+            overflowY: "hidden",
           }}
-        ></div>
-      ) : (
-        <Trail
-          items={stripes}
-          from={{ marginLeft: "-100vw" }}
-          to={{ marginLeft: "0" }}
-          keys={(item) => item.key}
-          config={config.slow}
-          onRest={() => setTimeout(() => setBgCompleted(true), 1200)}
-        >
-          {(item) => (props) => <div style={props}>{item}</div>}
-        </Trail>
-      )}
+          downArrowTo={downArrowTo}
+          downArrowToolTip={downArrowToolTip}
+        ></SplashContent>
+      </div>
+      <div style={{ width: "100vw", height: "100vh" }} id={id}>
+        {bgCompleted ? (
+          <div
+            style={{
+              height: "100vh",
+              width: "100vw",
+              backgroundColor: `${bgColor}`,
+            }}
+          ></div>
+        ) : (
+          <Trail
+            items={stripes}
+            from={{ marginLeft: "-100vw" }}
+            to={{ marginLeft: "0" }}
+            keys={(item) => item.key}
+            config={config.slow}
+            onRest={() => setTimeout(() => setBgCompleted(true), 1200)}
+          >
+            {(item) => (props) => <div style={props}>{item}</div>}
+          </Trail>
+        )}
+      </div>
     </div>
   );
 }
