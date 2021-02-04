@@ -28,6 +28,7 @@ export default function AnimatedDownArrow({
             width: "auto",
             justifyContent: "row",
             alignItems: "center",
+            marginTop: "1.5rem",
           }}
         >
           <Link

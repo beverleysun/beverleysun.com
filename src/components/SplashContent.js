@@ -13,19 +13,19 @@ export default function SplashContent({
   const content = [];
 
   content.push(
-    <h1 style={{ fontSize: "6rem", color: `${textColor}` }} key="1">
+    <h1 style={{ color: `${textColor}` }} key="1">
       {title}
     </h1>,
-    <h2 style={{ color: `${textColor}` }} key="2">
+    <p style={{ color: `${textColor}` }} key="2">
       Part III Software Engineering Student at UoA
-    </h2>,
-    <h2 style={{ color: `${textColor}` }} key="3">
+    </p>,
+    <p style={{ color: `${textColor}` }} key="3">
       Always looking to learn
-    </h2>,
-    <h2 style={{ color: `${textColor}` }} key="4">
+    </p>,
+    <p style={{ color: `${textColor}` }} key="4">
       Loves dogs
-    </h2>,
-    <div style={{ marginTop: "2.5rem" }}>
+    </p>,
+    <div>
       <AnimatedDownArrow
         to={downArrowTo}
         color={colors.white}
@@ -35,7 +35,7 @@ export default function SplashContent({
   );
 
   return (
-    <div style={style}>
+    <div style={style} className="section-content">
       <Trail
         from={{ marginTop: "-10rem" }}
         to={{ marginTop: "0" }}
@@ -44,7 +44,11 @@ export default function SplashContent({
         keys={(item) => item.key}
         delay="500"
       >
-        {(item) => (props) => <div style={props}>{item}</div>}
+        {(item) => (props) => (
+          <div style={props} className="with-p">
+            {item}
+          </div>
+        )}
       </Trail>
     </div>
   );

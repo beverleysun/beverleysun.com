@@ -5,6 +5,10 @@
   overflow-x: hidden;
 }
 
+html {
+  font-size: 1em;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -25,9 +29,72 @@
   background: rgb(158, 156, 156);
 }
 
+h1 {
+  font-size: 5em;
+}
+
 .section {
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
+}
+
+.with-p {
+  width: 40vw;
+  margin-bottom: "2.5em";
+}
+
+.with-p p {
+  font-size: 2em;
+}
+
+.section-content {
+  margin-left: 15vw;
+}
+
+@media only screen and (max-width: 1400px) {
+  h1 {
+    font-size: 3.5em;
+  }
+
+  .section {
+    justify-content: center;
+  }
+
+  .with-p {
+    width: 100%;
+  }
+
+  .section-content {
+    margin: 0;
+    width: 80%;
+  }
+
+  .with-p p {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  .section {
+    justify-content: center;
+  }
+
+  .with-p {
+    width: 100%;
+  }
+
+  .section-content {
+    margin: 0;
+    width: 80%;
+  }
+
+  .with-p p {
+    font-size: 1.2em;
+  }
 }

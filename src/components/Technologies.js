@@ -18,20 +18,21 @@ export default function Technologies({
         backgroundColor: `${colors.orange}`,
       }}
     >
-      <div style={{ marginLeft: "15vw", position: "absolute" }}>
+      <div className="section-content">
         <AnimatedUpArrow
           to={upArrowTo}
           color={colors.white}
           toolTip={upArrowToolTip}
         ></AnimatedUpArrow>
-        <h1
-          style={{
-            fontSize: "6rem",
-            color: `${colors.white}`,
-          }}
-        >
-          Technologies
-        </h1>
+        <div className="with-p">
+          <h1
+            style={{
+              color: `${colors.white}`,
+            }}
+          >
+            Tech
+          </h1>
+        </div>
         <AnimatedDownArrow
           to={downArrowTo}
           color={colors.white}

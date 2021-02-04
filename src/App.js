@@ -8,7 +8,7 @@ export default function App() {
   return (
     <>
       <Splash
-        title="Beverley Sun :-)"
+        title="Beverley"
         downArrowTo="about"
         downArrowToolTip="about"
         id="splash"
@@ -17,7 +17,7 @@ export default function App() {
         upArrowTo="splash"
         downArrowTo="technologies"
         upArrowToolTip="home"
-        downArrowToolTip="technologies"
+        downArrowToolTip="tech"
         id="about"
       ></AboutMe>
       <Technologies

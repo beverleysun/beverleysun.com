@@ -18,7 +18,7 @@ export default function AboutMe({
       }}
       id={id}
     >
-      <div style={{ margin: "0 0 0 15vw", position: "absolute" }}>
+      <div className="section-content">
         <AnimatedUpArrow
           to={upArrowTo}
           color={colors.orange}
@@ -26,20 +26,24 @@ export default function AboutMe({
         ></AnimatedUpArrow>
         <h1
           style={{
-            fontSize: "6rem",
             color: `${colors.orange}`,
           }}
         >
           About Me
         </h1>
-        <div style={{ width: "50vw", marginBottom: "2.5rem" }}>
-          <h2 style={{ color: `${colors.orange}`, marginBottom: "1rem" }}>
+        <div className="with-p">
+          <p
+            style={{
+              color: `${colors.orange}`,
+            }}
+          >
             Hey there! I'm a Penultimate Year Software Engineering Student at
             the University of Auckland. I'm passionate about what I do with a
             firm appreciation for good design. I enjoy photography, painting,
             hiking, running, and playing with dogs.
-          </h2>
-          <h5 style={{ color: `${colors.orange}` }}>If only I had a dog.</h5>
+          </p>
+          <div style={{ height: "15px" }}></div>
+          <sub style={{ color: `${colors.orange}` }}>If only I had a dog.</sub>
         </div>
         <AnimatedDownArrow
           to={downArrowTo}

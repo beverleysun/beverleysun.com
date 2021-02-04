@@ -25,11 +25,6 @@ export default function Splash({
       <div className="section" style={{ position: "absolute" }}>
         <SplashContent
           title={title}
-          style={{
-            marginLeft: "15vw",
-            position: "absolute",
-            overflowY: "hidden",
-          }}
           downArrowTo={downArrowTo}
           downArrowToolTip={downArrowToolTip}
         ></SplashContent>
