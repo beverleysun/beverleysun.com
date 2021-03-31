@@ -24,7 +24,6 @@ export default function AnimatedDownArrow({
       {(props) => (
         <div
           style={{
-            cursor: "pointer",
             display: "flex",
             justifyContent: "row",
             alignItems: "center",
@@ -36,6 +35,7 @@ export default function AnimatedDownArrow({
             onMouseEnter={toggleHover}
             onMouseLeave={toggleHover}
             duration="500"
+            style={{ overflow: "hidden" }}
           >
             <IoIosArrowUp
               color={color}
