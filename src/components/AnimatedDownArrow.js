@@ -25,7 +25,6 @@ export default function AnimatedDownArrow({
         <div
           style={{
             display: "flex",
-            width: "auto",
             justifyContent: "row",
             alignItems: "center",
             marginTop: "1.5rem",
@@ -46,7 +45,6 @@ export default function AnimatedDownArrow({
                 cursor: "pointer",
                 marginLeft: `${props.marginLeft}`,
                 marginBottom: `${props.marginBottom}`,
-                display: "inline",
               }}
             ></IoIosArrowDown>
           </Link>
