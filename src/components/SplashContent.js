@@ -17,13 +17,13 @@ export default function SplashContent({
       {title}
     </h1>,
     <p style={{ color: `${textColor}` }} key="2">
-      Part III Software Engineering student at the University of Auckland
+      • Part III Software Engineering student at the University of Auckland
     </p>,
     <p style={{ color: `${textColor}` }} key="3">
-      Always looking to learn
+      • Always looking to learn
     </p>,
     <p style={{ color: `${textColor}` }} key="4">
-      Loves dogs
+      • Loves dogs
     </p>,
     <div>
       <AnimatedDownArrow
