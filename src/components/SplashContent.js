@@ -2,6 +2,7 @@ import React from "react";
 import { config, Trail } from "react-spring/renderprops";
 import AnimatedDownArrow from "./AnimatedDownArrow.js";
 import { colors } from "../util/colors.js";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 export default function SplashContent({
   title = "Title",
@@ -13,6 +14,18 @@ export default function SplashContent({
   const content = [];
 
   content.push(
+    <div>
+      <a
+        href="https://github.com/beverleysun"
+        target="_blank"
+        style={{ marginRight: "15px" }}
+      >
+        <AiFillGithub color={colors.white} size="40px"></AiFillGithub>
+      </a>
+      <a href="https://www.linkedin.com/in/beverley-sun/" target="_blank">
+        <AiFillLinkedin color={colors.white} size="40px"></AiFillLinkedin>
+      </a>
+    </div>,
     <h1 style={{ color: `${textColor}` }} key="1">
       {title}
     </h1>,
