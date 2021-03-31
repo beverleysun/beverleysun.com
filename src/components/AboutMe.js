@@ -21,12 +21,12 @@ export default function AboutMe({
       <div className="section-content">
         <AnimatedUpArrow
           to={upArrowTo}
-          color={colors.orange}
+          color={colors.black}
           toolTip={upArrowToolTip}
         ></AnimatedUpArrow>
         <h1
           style={{
-            color: `${colors.orange}`,
+            color: `${colors.black}`,
           }}
         >
           About Me
@@ -34,7 +34,7 @@ export default function AboutMe({
         <div className="with-p">
           <p
             style={{
-              color: `${colors.orange}`,
+              color: `${colors.black}`,
             }}
           >
             Hey there! I'm a Penultimate Year Software Engineering Student at
@@ -42,11 +42,11 @@ export default function AboutMe({
             firm appreciation for good design. I enjoy photography, painting,
             hiking, running, and playing with dogs.
           </p>
-          <sub style={{ color: `${colors.orange}` }}>If only I had a dog.</sub>
+          <sub style={{ color: `${colors.black}` }}>If only I had a dog.</sub>
         </div>
         <AnimatedDownArrow
           to={downArrowTo}
-          color={colors.orange}
+          color={colors.black}
           toolTip={downArrowToolTip}
         ></AnimatedDownArrow>
       </div>

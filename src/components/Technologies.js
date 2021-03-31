@@ -15,7 +15,7 @@ export default function Technologies({
       className="section"
       id={id}
       style={{
-        backgroundColor: `${colors.orange}`,
+        backgroundColor: `${colors.black}`,
       }}
     >
       <div className="section-content">
