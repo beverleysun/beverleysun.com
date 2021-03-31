@@ -19,10 +19,15 @@ export default function SplashContent({
         href="https://github.com/beverleysun"
         target="_blank"
         style={{ marginRight: "15px" }}
+        rel="noreferrer"
       >
         <AiFillGithub color={colors.white} size="40px"></AiFillGithub>
       </a>
-      <a href="https://www.linkedin.com/in/beverley-sun/" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/beverley-sun/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <AiFillLinkedin color={colors.white} size="40px"></AiFillLinkedin>
       </a>
     </div>,
