@@ -37,6 +37,7 @@ export default function Technologies({
           to={downArrowTo}
           color={colors.white}
           toolTip={downArrowToolTip}
+          style={{ marginTop: 0 }}
         ></AnimatedDownArrow>
       </div>
     </div>

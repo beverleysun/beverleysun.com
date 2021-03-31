@@ -42,7 +42,6 @@ export default function AboutMe({
             firm appreciation for good design. I enjoy photography, painting,
             hiking, running, and playing with dogs.
           </p>
-          <div style={{ height: "15px" }}></div>
           <sub style={{ color: `${colors.orange}` }}>If only I had a dog.</sub>
         </div>
         <AnimatedDownArrow

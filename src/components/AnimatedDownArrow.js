@@ -7,6 +7,7 @@ export default function AnimatedDownArrow({
   to = "",
   color = "#fff",
   toolTip = "",
+  style = {},
 }) {
   const [hover, setHover] = useState(false);
   function toggleHover() {
@@ -28,6 +29,7 @@ export default function AnimatedDownArrow({
             justifyContent: "row",
             alignItems: "center",
             marginTop: "1.5rem",
+            ...style,
           }}
         >
           <Link
