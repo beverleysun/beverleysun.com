@@ -20,6 +20,7 @@ export default function SplashContent({
         target="_blank"
         style={{ marginRight: "15px" }}
         rel="noreferrer"
+        key="1"
       >
         <AiFillGithub color={colors.white} size="40px"></AiFillGithub>
       </a>
@@ -27,23 +28,24 @@ export default function SplashContent({
         href="https://www.linkedin.com/in/beverley-sun/"
         target="_blank"
         rel="noreferrer"
+        key="2"
       >
         <AiFillLinkedin color={colors.white} size="40px"></AiFillLinkedin>
       </a>
     </div>,
-    <h1 style={{ color: `${textColor}` }} key="1">
+    <h1 style={{ color: `${textColor}` }} key="3">
       {title}
     </h1>,
-    <p style={{ color: `${textColor}` }} key="2">
+    <p style={{ color: `${textColor}` }} key="4">
       • Part III Software Engineering student at the University of Auckland
     </p>,
-    <p style={{ color: `${textColor}` }} key="3">
+    <p style={{ color: `${textColor}` }} key="5">
       • Always looking to learn
     </p>,
-    <p style={{ color: `${textColor}` }} key="4">
+    <p style={{ color: `${textColor}` }} key="6">
       • Loves dogs
     </p>,
-    <div>
+    <div key="7">
       <AnimatedDownArrow
         to={downArrowTo}
         color={colors.white}

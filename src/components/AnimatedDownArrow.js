@@ -37,7 +37,6 @@ export default function AnimatedDownArrow({
             smooth={true}
             onMouseEnter={toggleHover}
             onMouseLeave={toggleHover}
-            duration="500"
             style={{ overflow: "hidden" }}
           >
             <IoIosArrowDown
