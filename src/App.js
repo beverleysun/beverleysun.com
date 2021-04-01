@@ -1,7 +1,7 @@
 import React from "react";
 import Splash from "./components/Splash.js";
 import AboutMe from "./components/AboutMe.js";
-import Technologies from "./components/Technologies.js";
+import Skills from "./components/Skills.js";
 import "./App.css";
 
 export default function App() {
@@ -15,18 +15,18 @@ export default function App() {
       />
       <AboutMe
         upArrowTo="splash"
-        downArrowTo="technologies"
+        downArrowTo="skills"
         upArrowToolTip="home"
         downArrowToolTip="tech"
         id="about"
       ></AboutMe>
-      <Technologies
+      <Skills
         upArrowTo="about"
         downArrowTo=""
         upArrowToolTip="about"
         downArrowToolTip="somewhere"
-        id="technologies"
-      ></Technologies>
+        id="skills"
+      ></Skills>
     </>
   );
 }

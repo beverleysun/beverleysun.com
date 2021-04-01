@@ -3,7 +3,7 @@ import { colors } from "../util/colors.js";
 import AnimatedUpArrow from "./AnimatedUpArrow.js";
 import AnimatedDownArrow from "./AnimatedDownArrow.js";
 
-export default function Technologies({
+export default function Skills({
   id = "",
   upArrowTo = "",
   downArrowTo = "",
@@ -30,7 +30,7 @@ export default function Technologies({
               color: `${colors.white}`,
             }}
           >
-            Tech
+            Skills
           </h1>
         </div>
         <AnimatedDownArrow
