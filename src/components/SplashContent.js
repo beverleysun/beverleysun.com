@@ -36,14 +36,24 @@ export default function SplashContent({
     <h1 style={{ color: `${textColor}` }} key="3">
       {title}
     </h1>,
-    <p style={{ color: `${textColor}` }} key="4">
-      • Part III Software Engineering student at the University of Auckland
+    <p key="4">
+      <div style={{ color: `${textColor}`, display: "flex" }}>
+        <div style={{ paddingRight: "10px" }}>•</div>{" "}
+        <div>
+          Part III Software Engineering student at the University of Auckland
+        </div>
+      </div>
     </p>,
-    <p style={{ color: `${textColor}` }} key="5">
-      • Always looking to learn
+    <p key="5">
+      <div style={{ color: `${textColor}`, display: "flex" }}>
+        <div style={{ paddingRight: "10px" }}>•</div>{" "}
+        <div>Always looking to learn</div>
+      </div>
     </p>,
-    <p style={{ color: `${textColor}` }} key="6">
-      • Loves dogs
+    <p key="6">
+      <div style={{ color: `${textColor}`, display: "flex" }}>
+        <div style={{ paddingRight: "10px" }}>•</div> <div>Loves dogs</div>
+      </div>
     </p>,
     <div key="7">
       <AnimatedDownArrow
@@ -56,18 +66,20 @@ export default function SplashContent({
 
   return (
     <div style={style} className="section-content">
-      <div className="with-p">
-        <Trail
-          from={{ marginTop: "-10rem" }}
-          to={{ marginTop: "0" }}
-          config={config.gentle}
-          items={content}
-          keys={(item) => item.key}
-          delay="500"
-        >
-          {(item) => (props) => <div style={props}>{item}</div>}
-        </Trail>
-      </div>
+      <Trail
+        from={{ marginTop: "-10rem" }}
+        to={{ marginTop: "0" }}
+        config={config.gentle}
+        items={content}
+        keys={(item) => item.key}
+        delay="500"
+      >
+        {(item) => (props) => (
+          <div style={props} className="with-p">
+            {item}
+          </div>
+        )}
+      </Trail>
     </div>
   );
 }
