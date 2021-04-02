@@ -17,7 +17,7 @@ export default function App() {
         upArrowTo="splash"
         downArrowTo="skills"
         upArrowToolTip="home"
-        downArrowToolTip="tech"
+        downArrowToolTip="skills"
         id="about"
       ></AboutMe>
       <Skills
