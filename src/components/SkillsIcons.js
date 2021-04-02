@@ -58,6 +58,12 @@ export default function SkillIcons({ className = "" }) {
         <MatlabIcon className="skill-icon"></MatlabIcon>
         <text>Matlab</text>
       </div>
+      <div className="skill-icon-filler"></div>
+      <div className="skill-icon-filler"></div>
+      <div className="skill-icon-filler"></div>
+      <div className="skill-icon-filler"></div>
+      <div className="skill-icon-filler"></div>
+      <div className="skill-icon-filler"></div>
     </div>
   );
 }

@@ -66,13 +66,20 @@ h1 {
 .skill-icons-wide {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   max-width: 40vw;
   padding-left: 30px;
+  column-gap: 30px;
+  row-gap: 15px;
 }
 
 .skill-icons-tall {
   display: none;
   flex-wrap: wrap;
+  width: 100%;
+  column-gap: 30px;
+  row-gap: 15px;
+  padding-top: 25px;
 }
 
 .skill-icon-group {
@@ -80,7 +87,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   color: white;
-  padding: 15px 30px 15px 0;
 }
 
 .skill-icons-tall .skill-icon-group .skill-icon {
@@ -96,6 +102,10 @@ h1 {
 .skill-icon {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.skill-icon-filler {
+  width: 80px;
 }
 
 @media only screen and (max-width: 950px) {
@@ -115,18 +125,17 @@ h1 {
     margin: 0;
     width: 80%;
   }
+
   .skill-icons-tall {
     display: flex;
     justify-content: space-between;
   }
 
-  .skill-icons-tall::after {
-    content: "";
-    flex: auto;
-  }
-
   .skill-icons-wide {
     display: none;
+  }
+  .skill-icon-filler {
+    width: 60px;
   }
 }
 
