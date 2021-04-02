@@ -27,6 +27,7 @@ export default function Splash({
           title={title}
           downArrowTo={downArrowTo}
           downArrowToolTip={downArrowToolTip}
+          style={{ paddingBottom: "100px" }}
         ></SplashContent>
       </div>
       <div style={{ width: "100vw", height: "100vh" }} id={id}>

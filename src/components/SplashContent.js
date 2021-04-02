@@ -56,20 +56,18 @@ export default function SplashContent({
 
   return (
     <div style={style} className="section-content">
-      <Trail
-        from={{ marginTop: "-10rem" }}
-        to={{ marginTop: "0" }}
-        config={config.gentle}
-        items={content}
-        keys={(item) => item.key}
-        delay="500"
-      >
-        {(item) => (props) => (
-          <div style={props} className="with-p">
-            {item}
-          </div>
-        )}
-      </Trail>
+      <div className="with-p">
+        <Trail
+          from={{ marginTop: "-10rem" }}
+          to={{ marginTop: "0" }}
+          config={config.gentle}
+          items={content}
+          keys={(item) => item.key}
+          delay="500"
+        >
+          {(item) => (props) => <div style={props}>{item}</div>}
+        </Trail>
+      </div>
     </div>
   );
 }

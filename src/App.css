@@ -35,13 +35,14 @@ h1 {
 
 .section {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 50px 0;
   display: flex;
   align-items: center;
 }
 
 .with-p {
-  width: 30vw;
+  max-width: 40vw;
 }
 
 .with-p p {
@@ -49,11 +50,55 @@ h1 {
 }
 
 .section-content {
-  margin-left: 15vw;
+  margin: 0 0 0 15vw;
+  width: 100vw;
   overflow: hidden;
 }
 
-@media only screen and (max-width: 1400px) {
+.section-skills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 15vw;
+}
+
+.skill-icons-wide {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 40vw;
+  padding-left: 30px;
+}
+
+.skill-icons-tall {
+  display: none;
+  flex-wrap: wrap;
+}
+
+.skill-icon-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 15px 30px 15px 0;
+}
+
+.skill-icons-tall .skill-icon-group .skill-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.skill-icons-wide .skill-icon-group .skill-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.skill-icon {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 950px) {
   h1 {
     font-size: 3.5em;
   }
@@ -63,31 +108,31 @@ h1 {
   }
 
   .with-p {
-    width: 100%;
+    max-width: 100%;
   }
 
   .section-content {
     margin: 0;
     width: 80%;
+  }
+  .skill-icons-tall {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skill-icons-tall::after {
+    content: "";
+    flex: auto;
+  }
+
+  .skill-icons-wide {
+    display: none;
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media (max-device-width: 640px) {
   h1 {
     font-size: 3em;
-  }
-
-  .section {
-    justify-content: center;
-  }
-
-  .with-p {
-    width: 100%;
-  }
-
-  .section-content {
-    margin: 0;
-    width: 80%;
   }
 
   .with-p p {
