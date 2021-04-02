@@ -42,6 +42,7 @@ h1 {
 
 .with-p {
   max-width: 40vw;
+  overflow: hidden;
 }
 
 .with-p p {
