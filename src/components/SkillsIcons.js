@@ -16,54 +16,48 @@ export default function SkillIcons({ className = "" }) {
     <div className={className}>
       <div className="skill-icon-group">
         <JavaIcon className="skill-icon"></JavaIcon>
-        <text>Java</text>
+        <p>Java</p>
       </div>
       <div className="skill-icon-group">
         <CsharpIcon className="skill-icon"></CsharpIcon>
-        <text>C#.NET</text>
+        <p>C#.NET</p>
       </div>
       <div className="skill-icon-group">
         <HtmlIcon className="skill-icon"></HtmlIcon>
-        <text>HTML</text>
+        <p>HTML</p>
       </div>
       <div className="skill-icon-group">
         <CssIcon className="skill-icon"></CssIcon>
-        <text>CSS</text>
+        <p>CSS</p>
       </div>
       <div className="skill-icon-group">
         <JsIcon className="skill-icon"></JsIcon>
-        <text>JS</text>
+        <p>JS</p>
       </div>
       <div className="skill-icon-group">
         <GitIcon className="skill-icon"></GitIcon>
-        <text>Git</text>
+        <p>Git</p>
       </div>
       <div className="skill-icon-group">
         <ReactIcon className="skill-icon"></ReactIcon>
-        <text>React.js</text>
+        <p>React.js</p>
       </div>
       <div className="skill-icon-group">
         <CIcon className="skill-icon"></CIcon>
-        <text>C</text>
+        <p>C</p>
       </div>
       {/*<div className="skill-icon-group">
         <Python className="skill-icon"></Python>
-        <text>Python</text>
+        <p>Python</p>
   </div>*/}
       <div className="skill-icon-group">
         <BashIcon className="skill-icon"></BashIcon>
-        <text>Bash</text>
+        <p>Bash</p>
       </div>
       <div className="skill-icon-group">
         <MatlabIcon className="skill-icon"></MatlabIcon>
-        <text>Matlab</text>
+        <p>Matlab</p>
       </div>
-      <div className="skill-icon-filler"></div>
-      <div className="skill-icon-filler"></div>
-      <div className="skill-icon-filler"></div>
-      <div className="skill-icon-filler"></div>
-      <div className="skill-icon-filler"></div>
-      <div className="skill-icon-filler"></div>
     </div>
   );
 }

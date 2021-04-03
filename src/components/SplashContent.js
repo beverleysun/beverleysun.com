@@ -36,27 +36,23 @@ export default function SplashContent({
     <h1 style={{ color: `${textColor}` }} key="3">
       {title}
     </h1>,
-    <p key="4">
+    <div key="4">
       <div style={{ color: `${textColor}`, display: "flex" }}>
         <div style={{ paddingRight: "10px" }}>•</div>
-        <div>
+        <p>
           Part III Software Engineering student at the University of Auckland
-        </div>
+        </p>
       </div>
-    </p>,
-    <p key="5">
       <div style={{ color: `${textColor}`, display: "flex" }}>
         <div style={{ paddingRight: "10px" }}>•</div>
-        <div>Always looking to learn</div>
+        <p>Always looking to learn</p>
       </div>
-    </p>,
-    <p key="6">
       <div style={{ color: `${textColor}`, display: "flex" }}>
         <div style={{ paddingRight: "10px" }}>•</div>
-        <div>Loves dogs</div>
+        <p>Loves dogs</p>
       </div>
-    </p>,
-    <div key="7">
+    </div>,
+    <div key="5">
       <AnimatedDownArrow
         to={downArrowTo}
         color={colors.white}
