@@ -1,15 +1,15 @@
 import React from "react";
-import { ReactComponent as BashIcon } from "../assets/skills_icons/bash.svg";
-import { ReactComponent as CIcon } from "../assets/skills_icons/c.svg";
-import { ReactComponent as CsharpIcon } from "../assets/skills_icons/csharp.svg";
-import { ReactComponent as CssIcon } from "../assets/skills_icons/css.svg";
-import { ReactComponent as GitIcon } from "../assets/skills_icons/git.svg";
-import { ReactComponent as HtmlIcon } from "../assets/skills_icons/html.svg";
-import { ReactComponent as JavaIcon } from "../assets/skills_icons/java.svg";
-import { ReactComponent as JsIcon } from "../assets/skills_icons/js.svg";
-import { ReactComponent as MatlabIcon } from "../assets/skills_icons/matlab.svg";
-// import { ReactComponent as Python } from "../assets/skills_icons/python.svg";
-import { ReactComponent as ReactIcon } from "../assets/skills_icons/reactjs.svg";
+import { ReactComponent as BashIcon } from "../../assets/skills_icons/bash.svg";
+import { ReactComponent as CIcon } from "../../assets/skills_icons/c.svg";
+import { ReactComponent as CsharpIcon } from "../../assets/skills_icons/csharp.svg";
+import { ReactComponent as CssIcon } from "../../assets/skills_icons/css.svg";
+import { ReactComponent as GitIcon } from "../../assets/skills_icons/git.svg";
+import { ReactComponent as HtmlIcon } from "../../assets/skills_icons/html.svg";
+import { ReactComponent as JavaIcon } from "../../assets/skills_icons/java.svg";
+import { ReactComponent as JsIcon } from "../../assets/skills_icons/js.svg";
+import { ReactComponent as MatlabIcon } from "../../assets/skills_icons/matlab.svg";
+// import { ReactComponent as Python } from "../../assets/skills_icons/python.svg";
+import { ReactComponent as ReactIcon } from "../../assets/skills_icons/reactjs.svg";
 
 export default function SkillIcons({ className = "" }) {
   return (

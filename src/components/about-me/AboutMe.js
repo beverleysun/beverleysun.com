@@ -1,7 +1,7 @@
 import React from "react";
-import { colors } from "../util/colors.js";
-import AnimatedDownArrow from "./AnimatedDownArrow.js";
-import AnimatedUpArrow from "./AnimatedUpArrow.js";
+import { colors } from "../../util/colors.js";
+import AnimatedDownArrow from "../small/AnimatedDownArrow.js";
+import AnimatedUpArrow from "../small/AnimatedUpArrow.js";
 
 export default function AboutMe({
   upArrowTo = "",

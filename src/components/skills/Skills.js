@@ -1,7 +1,7 @@
 import React from "react";
-import { colors } from "../util/colors.js";
-import AnimatedUpArrow from "./AnimatedUpArrow.js";
-import AnimatedDownArrow from "./AnimatedDownArrow.js";
+import { colors } from "../../util/colors.js";
+import AnimatedUpArrow from "../small/AnimatedUpArrow.js";
+import AnimatedDownArrow from "../small/AnimatedDownArrow.js";
 import SkillsIcons from "./SkillsIcons.js";
 
 export default function Skills({

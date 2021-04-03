@@ -1,7 +1,7 @@
 import React from "react";
-import Splash from "./components/Splash.js";
-import AboutMe from "./components/AboutMe.js";
-import Skills from "./components/Skills.js";
+import Splash from "./components/splash/Splash.js";
+import AboutMe from "./components/about-me/AboutMe.js";
+import Skills from "./components/skills/Skills.js";
 import "./App.css";
 
 export default function App() {

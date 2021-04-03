@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { config, Trail } from "react-spring/renderprops";
 import SplashStripe from "./SplashStripe.js";
 import SplashContent from "./SplashContent.js";
-import { colors } from "../util/colors.js";
+import { colors } from "../../util/colors.js";
 
 export default function Splash({
   downArrowTo = "",

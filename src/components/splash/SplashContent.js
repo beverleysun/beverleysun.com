@@ -1,7 +1,7 @@
 import React from "react";
 import { config, Trail } from "react-spring/renderprops";
-import AnimatedDownArrow from "./AnimatedDownArrow.js";
-import { colors } from "../util/colors.js";
+import AnimatedDownArrow from "../small/AnimatedDownArrow.js";
+import { colors } from "../../util/colors.js";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 export default function SplashContent({
