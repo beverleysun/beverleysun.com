@@ -72,11 +72,10 @@ Skills
 
 /* For wide screens */
 .skill-icons-wide {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 80px);
   justify-content: space-between;
   max-width: 40vw;
-  padding-left: 30px;
   column-gap: 30px;
   row-gap: 15px;
 }
@@ -84,11 +83,13 @@ Skills
 /* For mobile (tall screens) */
 .skill-icons-tall {
   display: none;
-  flex-wrap: wrap;
-  width: 100%;
-  column-gap: 30px;
-  row-gap: 15px;
+  column-gap: 20px;
+  row-gap: 20px;
   padding-top: 25px;
+  min-width: 100%;
+  max-width: 70vw;
+  grid-template-columns: repeat(auto-fit, 60px);
+  justify-content: space-between;
 }
 
 .skill-icon-group {
@@ -144,15 +145,11 @@ Skills
   }
 
   .skill-icons-tall {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
   }
 
   .skill-icons-wide {
     display: none;
-  }
-  .skill-icon-filler {
-    width: 60px;
   }
 }
 
