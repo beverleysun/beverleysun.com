@@ -41,7 +41,7 @@ h1 {
 }
 
 .with-p {
-  max-width: 40vw;
+  max-width: 30vw;
   overflow: hidden;
 }
 
@@ -56,19 +56,19 @@ h1 {
   overflow: hidden;
 }
 
-/* 
----
-Skills 
----
-*/
-
-.section-skills {
+.section-two-column {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin-right: 15vw;
 }
+
+/* 
+---
+Skills 
+---
+*/
 
 /* For wide screens */
 .skill-icons-wide {
@@ -126,7 +126,33 @@ Skills
   width: 80px;
 }
 
-@media only screen and (max-width: 950px) {
+/* 
+---
+Projects
+---
+*/
+
+.project-cards-wide {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  max-width: 40vw;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding-left: 30px;
+}
+
+/* For mobile (tall screens) */
+.project-cards-tall {
+  display: none;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding-top: 25px;
+  min-width: 100%;
+  max-width: 70vw;
+  grid-template-columns: repeat(auto-fit, 100%);
+}
+
+@media only screen and (max-width: 1050px) {
   h1 {
     font-size: 3.5em;
   }
@@ -150,6 +176,14 @@ Skills
 
   .skill-icons-wide {
     display: none;
+  }
+
+  .project-cards-wide {
+    display: none;
+  }
+
+  .project-cards-tall {
+    display: grid;
   }
 }
 
