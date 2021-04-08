@@ -19,7 +19,7 @@ export default function Skills({
         backgroundColor: `${colors.black}`,
       }}
     >
-      <div className="section-content section-skills">
+      <div className="section-content section-two-column">
         <div>
           <AnimatedUpArrow
             to={upArrowTo}
