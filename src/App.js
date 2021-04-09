@@ -3,6 +3,7 @@ import Splash from "./components/splash/Splash.js";
 import AboutMe from "./components/about-me/AboutMe.js";
 import Skills from "./components/skills/Skills.js";
 import Projects from "./components/projects/Projects.js";
+import TheVoid from "./components/the-void/TheVoid.js";
 import "./App.css";
 
 export default function App() {
@@ -30,11 +31,12 @@ export default function App() {
       ></Skills>
       <Projects
         upArrowTo="skills"
-        downArrowTo=""
+        downArrowTo="the void"
         upArrowToolTip="skills"
         downArrowToolTip="the void"
         id="projects"
       ></Projects>
+      <TheVoid id="the void"></TheVoid>
     </>
   );
 }
