@@ -12,7 +12,7 @@ export default function TheVoid({ id = "" }) {
       }}
     >
       <div className="section-content">
-        <div>
+        <div className="the-void">
           <h1
             style={{
               color: `${colors.white}`,
