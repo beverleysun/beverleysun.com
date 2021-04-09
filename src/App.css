@@ -134,11 +134,9 @@ Projects
 
 .project-cards-wide {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
-  max-width: 40vw;
-  column-gap: 20px;
+  flex-grow: 1;
+  max-width: 30vw;
   row-gap: 20px;
-  padding-left: 30px;
 }
 
 /* For mobile (tall screens) */
