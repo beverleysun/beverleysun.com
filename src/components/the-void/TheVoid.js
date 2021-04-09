@@ -1,6 +1,6 @@
 import React from "react";
 import { colors } from "../../util/colors.js";
-import "../../TheVoidGlitch.scss";
+import "../../style/TheVoidGlitch.scss";
 
 export default function TheVoid({ id = "" }) {
   return (
@@ -18,18 +18,9 @@ export default function TheVoid({ id = "" }) {
               color: `${colors.white}`,
             }}
             className="the-void-title"
-            data-text="Welcome to"
+            data-text="Welcome to the Void"
           >
-            Welcome to
-          </h1>
-          <h1
-            style={{
-              color: `${colors.white}`,
-            }}
-            className="the-void-title"
-            data-text="the Void"
-          >
-            the Void
+            Welcome to the Void
           </h1>
         </div>
       </div>

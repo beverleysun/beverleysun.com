@@ -4,7 +4,7 @@ import AboutMe from "./components/about-me/AboutMe.js";
 import Skills from "./components/skills/Skills.js";
 import Projects from "./components/projects/Projects.js";
 import TheVoid from "./components/the-void/TheVoid.js";
-import "./App.css";
+import "./style/App.css";
 
 export default function App() {
   return (
