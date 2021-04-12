@@ -28,7 +28,7 @@ export default function AboutMe({
           ></AnimatedUpArrow>
           <h1
             style={{
-              color: `${colors.black}`,
+              color: `${colors.blue}`,
             }}
           >
             Projects
