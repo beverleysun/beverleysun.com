@@ -11,17 +11,17 @@ export default function TheVoid({ id = "" }) {
         backgroundColor: `${colors.black}`,
       }}
     >
-      <div className="section-content">
+      <div className="section-content section-void">
         <div className="the-void">
-          <h1
+          <p
             style={{
               color: `${colors.white}`,
             }}
             className="the-void-title"
-            data-text="Welcome to the Void"
+            data-text="the void"
           >
-            Welcome to the Void
-          </h1>
+            the void
+          </p>
         </div>
       </div>
     </div>
