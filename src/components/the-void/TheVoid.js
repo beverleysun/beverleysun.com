@@ -18,9 +18,9 @@ export default function TheVoid({ id = "" }) {
               color: `${colors.white}`,
             }}
             className="the-void-title"
-            data-text="the void"
+            data-text="welcome to the void"
           >
-            the void
+            welcome to the void
           </p>
         </div>
       </div>
