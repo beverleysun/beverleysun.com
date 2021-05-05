@@ -8,7 +8,7 @@ import { ReactComponent as HtmlIcon } from "../../assets/skills_icons/html.svg";
 import { ReactComponent as JavaIcon } from "../../assets/skills_icons/java.svg";
 import { ReactComponent as JsIcon } from "../../assets/skills_icons/js.svg";
 import { ReactComponent as MatlabIcon } from "../../assets/skills_icons/matlab.svg";
-// import { ReactComponent as Python } from "../../assets/skills_icons/python.svg";
+import { ReactComponent as Python } from "../../assets/skills_icons/python.svg";
 import { ReactComponent as ReactIcon } from "../../assets/skills_icons/reactjs.svg";
 
 export default function SkillIcons({ className = "" }) {
@@ -46,10 +46,10 @@ export default function SkillIcons({ className = "" }) {
         <CIcon className="skill-icon"></CIcon>
         <p>C</p>
       </div>
-      {/*<div className="skill-icon-group">
+      <div className="skill-icon-group">
         <Python className="skill-icon"></Python>
         <p>Python</p>
-  </div>*/}
+      </div>
       <div className="skill-icon-group">
         <BashIcon className="skill-icon"></BashIcon>
         <p>Bash</p>
